@@ -6,6 +6,9 @@ const screen = {
                             <div class="data">
                                 <h1>${user.name ?? 'Não possui nome cadastrado 😭'}</h1>
                                 <p>${user.bio ?? 'Não possui bio cadastrada 😭'}</p>
+                                <br>
+                                <h3>Followers: ${user.followers ?? 'Não tem seguidores 🐺'} </h3>
+                                <h3>Following: ${user.following ?? 'Não segue ninguem'} </h3>
                             </div>
                         </div>`
 
@@ -23,5 +26,7 @@ const screen = {
         this.userProfile.innerHTML = '<h3>Usuário não encontrado!</h3>'
     }
 }
+
+
 
 export { screen }
